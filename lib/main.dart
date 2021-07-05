@@ -15,13 +15,12 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
         ),
         body: Center(
-            child: Column(
-          children: [
-            Image.asset('assets/img.jpeg'),
-            Text('Qiktech'),
-            Image.network('https://cdn.dribbble.com/users/1615584/screenshots/15976393/media/2817662416918f1d0c101fabacce1480.jpg?compress=1&resize=1200x900')
-          ],
-        )),
+          child: Icon(
+            Icons.ac_unit,
+            color: Colors.amber,
+            size: 50,
+          ),
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: null,
           child: Text('click'),
