@@ -14,15 +14,16 @@ class MyApp extends StatelessWidget {
           // centerTitle: true,
           backgroundColor: Colors.black,
         ),
-        body: Center(
-          child: Column(children: [
-            ElevatedButton(onPressed: (){},child: Icon(Icons.ac_unit),),
-            TextButton.icon(
-              onPressed: () {},
-              icon: Icon(Icons.favorite_border),
-              label: const Text('Button'),
-            ),
-          ],)
+        body: Container(
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.all(20),
+          color: Colors.purple,
+          child: Column(
+            children: [
+              Text('hello'),
+              ElevatedButton(child: Icon(Icons.ac_unit), onPressed: (){})
+            ],
+          )
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: null,
