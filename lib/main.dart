@@ -15,11 +15,10 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
         ),
         body: Center(
-          child: Icon(
-            Icons.ac_unit,
-            color: Colors.amber,
-            size: 50,
-          ),
+          child: Column(children: [
+            ElevatedButton(onPressed: (){},child: Icon(Icons.ac_unit),),
+            ElevatedButton(onPressed: (){},child: Text('Button'),),
+          ],)
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: null,
