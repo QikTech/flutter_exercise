@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MaterialApp(
-      home: Home(),
+      home: MyApp(),
     ));
 
-class Home extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,11 +15,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.black,
       ),
       body: Center(
-        child: Text('hey ',
-          style: GoogleFonts.indieFlower(
-              textStyle: TextStyle( color: Colors.amber)
-          ),
-        ),
+        child: Image.network('https://cdn.dribbble.com/users/1615584/screenshots/15976393/media/2817662416918f1d0c101fabacce1480.jpg?compress=1&resize=1200x900'),
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: null,
