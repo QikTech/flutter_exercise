@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
           margin: EdgeInsets.all(20),
           color: Colors.purple,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text('hello'),
               ElevatedButton(child: Icon(Icons.ac_unit), onPressed: (){})
