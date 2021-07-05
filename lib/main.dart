@@ -14,18 +14,37 @@ class MyApp extends StatelessWidget {
           // centerTitle: true,
           backgroundColor: Colors.black,
         ),
-        body: Container(
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(20),
-          color: Colors.purple,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Text('hello'),
-              ElevatedButton(child: Icon(Icons.ac_unit), onPressed: (){})
-            ],
-          )
+        body: Row(
+          children: [
+            Expanded(
+              child: Image.asset('assets/img.jpeg'),
+              flex: 2,
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.cyan,
+                child: Text('1'),
+              ),
+            ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.pinkAccent,
+                child: Text('12'),
+              ),
+            ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.amber,
+                child: Text('13'),
+              ),
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: null,
