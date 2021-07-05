@@ -17,7 +17,11 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(children: [
             ElevatedButton(onPressed: (){},child: Icon(Icons.ac_unit),),
-            ElevatedButton(onPressed: (){},child: Text('Button'),),
+            TextButton.icon(
+              onPressed: () {},
+              icon: Icon(Icons.favorite_border),
+              label: const Text('Button'),
+            ),
           ],)
         ),
         floatingActionButton: FloatingActionButton(
