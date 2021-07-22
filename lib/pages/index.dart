@@ -24,9 +24,13 @@ class _IndexPageState extends State<IndexPage> {
 
 
   void fetchUser() async {
+    setState(() {
+      isLoading = true;
+    });
+
     // Get API Response
     // #1
-    var response = await get(Uri.parse('https://randomuser.me/api/?results=10'));
+    var response = await get(Uri.parse('https://randomuser.me/api/?results=50'));
     print(response.body);
     if(response.statusCode == 200){
       // #2
@@ -34,10 +38,13 @@ class _IndexPageState extends State<IndexPage> {
       print(jsonData);
       setState(() {
         usersFromJson = jsonData;
+        isLoading = false;
       });
     }else {
       setState(() {
         usersFromJson = [];
+        isLoading = false;
+
       });
     }
     // print(jsonData[]);
@@ -56,6 +63,10 @@ class _IndexPageState extends State<IndexPage> {
   }
 
   Widget getBody() {
+    if(usersFromJson.contains(null) || usersFromJson.length < 0 || isLoading){
+      return Center(child: CircularProgressIndicator());
+    }
+    
     List items = [
       "1",
       "2"
@@ -93,9 +104,9 @@ Widget getCard(usersFromJson){
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(fullName, style: TextStyle(fontSize: 17),),
+                Text(fullName, style: TextStyle(fontSize: 16),),
                 SizedBox(width: 20,),
-                Text(email, style: TextStyle(fontSize: 17,
+                Text(email, style: TextStyle(fontSize: 14,
                 color: Colors.grey),),
               ],
             )
