@@ -43,8 +43,21 @@ Widget getCard(){
               height: 60,
               decoration: BoxDecoration(
                 color: primary,
-                borderRadius: BorderRadiusDirectional.circular(60/2)
+                borderRadius: BorderRadiusDirectional.circular(60/2),
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: NetworkImage('https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'))
               ),
+            ),
+            SizedBox(width: 20,),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Prasad Sawant', style: TextStyle(fontSize: 17),),
+                SizedBox(width: 20,),
+                Text('prassaw@gmail.com', style: TextStyle(fontSize: 17,
+                color: Colors.grey),),
+              ],
             )
           ],
         ),
