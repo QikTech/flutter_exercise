@@ -30,7 +30,7 @@ class _IndexPageState extends State<IndexPage> {
 
     // Get API Response
     // #1
-    var response = await get(Uri.parse('https://randomuser.me/api/?results=50'));
+    var response = await get(Uri.parse('https://randomuser.me/api/?results=88'));
     print(response.body);
     if(response.statusCode == 200){
       // #2
