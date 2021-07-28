@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_with_the_net_ninja">
+    package="qiktech.dev.daily_exercices">
    <application
-        android:label="flutter_with_the_net_ninja"
+        android:label="daily_exercices"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

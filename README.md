@@ -1,6 +1,6 @@
-# flutter_with_the_net_ninja
+# daily_exercices
 
-A new Flutter project.
+Daily Exercices
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-package com.example.flutter_with_the_net_ninja
+package qiktech.dev.daily_exercices
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,11 +1,11 @@
 {
-    "name": "flutter_with_the_net_ninja",
-    "short_name": "flutter_with_the_net_ninja",
+    "name": "daily_exercices",
+    "short_name": "daily_exercices",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Daily Exercices",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
